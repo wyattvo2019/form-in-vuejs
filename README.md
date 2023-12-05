@@ -23,3 +23,7 @@ yarn lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 # form-in-vuejs
+```
+npm install bootstrap
+npm install bootstrap-vue
+```
