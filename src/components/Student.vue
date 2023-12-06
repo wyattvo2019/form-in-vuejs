@@ -47,7 +47,8 @@ export default {
   methods: {
     clickSave(){
       this.$emit("save", this.student);
-      console.log(this.student);  
+      console.log(this.student);
+      this.student = {};
     }
   },
   data(){

@@ -40,7 +40,18 @@ export default {
   },
   methods:{
     clickAdd(itemStudent){
-      this.list.push(itemStudent);
+      let index = this.list.findIndex((c)=> c.id === itemStudent.id);
+      if(index>=0){
+        this.list.splice(index,1,itemStudent);
+      }else{
+        let maxId = 0;
+        for(let i=0; i<this.list.length;i++){
+          if(this.list[i].id > maxId) maxId= this.list[i].id;
+        }
+        let newId = maxId + 1;
+        itemStudent.id = newId;
+        this.list.push(itemStudent);
+      }
     },
     deleteStudent(itemDelete){
       for(let i=0; i< this.list.length; i++){
