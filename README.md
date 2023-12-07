@@ -27,3 +27,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 npm install bootstrap
 npm install bootstrap-vue
 ```
+```
+npm install vue-router@4
+```
+
